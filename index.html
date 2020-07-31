@@ -1,2 +1,169 @@
-<h1> Search Here</h1>
-<img src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<!DOCTYPE html>
+<html>
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    header {
+     width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #nav_bar {
+      float: right;
+    }
+    #nav_bar li {
+      display: inline-block;
+      padding: 8px;
+    }
+    #nav_bar #sign_in {
+      background: #4887ef; 
+      margin-right: 25px;
+      padding: 7px 15px;
+      border-radius: 3px; 
+      font-weight: bold;
+    }
+
+    .nav-links {
+      color: #404040;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-links {
+      color: #404040;
+    }
+    li.nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    #sign_in:hover { 
+      box-shadow: 1px 1px 5px #999;
+    }
+
+    #sign_in {
+      color: #fff;
+    }
+
+
+    .google-search {
+    text-align:center;
+    width:100%;
+    height:auto;
+    padding-top:130px;
+    margin:0 auto;
+    }
+    .logo {
+     margin-top:150px;     
+    }
+    .google-logo {
+     width:300px;
+    }
+    .form {
+    text-align: center;
+    }
+
+    #form-search { 
+    width: 450px;
+    line-height: 32px;
+    padding: 20px 10px;
+    }
+
+    .form #form-search {
+    padding: 0 8px;
+    }
+    .buttons {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 300px;
+    }
+    footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    }
+    footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+    }
+
+    footer ul {
+    float: left;
+    padding: 1px;
+    } 
+
+    footer ul a:hover {
+    text-decoration: underline;
+    }
+
+    .footer-right {
+    float: right;
+    }
+
+ </style>
+
+
+ <head>
+    <title> Google Search
+    </title>
+ </head>
+ <body>
+    <header>
+        <nav>
+           <ul id="nav_bar">
+               <li class="nav-links" id="gmail">
+                  <a href="#">Gmail</a>
+               </li>
+               <li class="nav-links">
+                  <a href="#">Images</a>
+               </li>
+               <li id="sign_in">
+                   <a href="#">SignIn</a> 
+               </li>
+           </ul>
+        </nav>
+    </header>
+  
+  
+    <div class="google-search" >
+        <div class="logo">
+          <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div> 
+        <div class="form">
+            <form>
+                <label for="form-search"></label>
+                <input type="text" id="form-search" placeholder="Search Google or type URL">
+            </form>
+        </div>
+        <div class= "buttons">  
+            <input type="submit" value="Google Search" id="google_search">
+            <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+        </div>  
+    </div>
+    <footer>
+        <ul class="footer-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="footer-right">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </footer>
+    </body>
+ </body>
+
+</html>
